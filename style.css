@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+/* HEADER */
+
+header {
+    
+    background-color:violet;
+    width: 100vw;
+    height: 50px;
+
+}
+
+ul {
+    display:flex;
+    justify-content: left;
+    align-content: center;
+    
+}
+
+li {
+    padding: 10px;
+    margin:2px;
+    font-family: Montserrat;
+    font-size: 25px;
+    color: peru;
+    list-style: none;
+}
+
+a:link, a:visited, a:active {
+    color: peru;
+    text-decoration:none;
+}
+
+.hamburguesa {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+/* CONTENEDOR */
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+font-family: Montserrat;
+font-size: 40px;
+text-align: center;
+}
+
+@media(min-width:600px) and (max-width:900px) {
+    h1 {
+        font-size: 32px;
+    }
+    .contenedor {
+        background-color: lightgreen;
+    }
+}
+
+@media(max-width:600px) {
+    h1 {
+        font-size: 24px;
+    }
+    .contenedor {
+        background-color: lightgreen;
+    }
+}
+
+@media(max-width:400px) {
+    nav {
+        display:none;
+    }
+    .hamburguesa {
+        display: flex;
+        
+    }
+    .contenedor-imagen {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
